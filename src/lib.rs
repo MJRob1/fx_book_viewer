@@ -79,7 +79,7 @@ fn render_fx_book(
                             render_buy_table_header(header);
                         })
                         .body(|body| {
-                            render_buy_table_body(body);
+                            render_buy_table_body(body, &fx_book.buy_book);
                         });
                 });
             });
@@ -95,7 +95,7 @@ fn render_fx_book(
                             render_sell_table_header(header);
                         })
                         .body(|mut body| {
-                            render_sell_table_body(body);
+                            render_sell_table_body(body, &fx_book.sell_book);
                         });
                 });
             });
@@ -127,54 +127,83 @@ fn render_buy_table_header(mut header: TableRow<'_, '_>) {
     });
 }
 
-fn render_buy_table_body(mut body: TableBody<'_>) {
-    body.row(30.0, |mut row| {
-        row.col(|ui| {
-            ui.label("(CITI: 3, BARX: 3)");
+fn render_buy_table_body(mut body: TableBody<'_>, buy_book: &Vec<FxAggBookEntry>) {
+    for entry in buy_book {
+        let lp_vol_vec = &entry.lp_vol;
+        let len = lp_vol_vec.len() - 1;
+        let mut lp_vol = String::from("(");
+        body.row(30.0, |mut row| {
+            row.col(|ui| {
+                // ui.label(format!("{:?}", entry.lp_vol));
+
+                let mut index = 0;
+                for val in lp_vol_vec {
+                    if index == 0 && len == 0 {
+                        lp_vol = format!("{}{}: {})", lp_vol, val.0, val.1);
+                        //  ui.label(lp_vol);
+                    } else if index == 0 {
+                        lp_vol = format!("{}{}: {},", lp_vol, val.0, val.1);
+                        //  ui.label(lp_vol);
+                    } else if index == len {
+                        lp_vol = format!("{} {}: {})", lp_vol, val.0, val.1);
+                        //  ui.label(lp_vol);
+                    } else {
+                        lp_vol = format!("{} {}: {},", lp_vol, val.0, val.1);
+                        //  ui.label(lp_vol);
+                    }
+                    index += 1;
+                }
+                ui.label(lp_vol);
+            });
+
+            row.col(|ui| {
+                ui.label(format!("{:?}", entry.volume));
+            });
+            row.col(|ui| {
+                ui.label(RichText::new(format!("{:?}", entry.price)).color(Color32::GREEN));
+            });
         });
-        row.col(|ui| {
-            ui.label("6");
-        });
-        row.col(|ui| {
-            ui.label(RichText::new("1.5572").color(Color32::GREEN));
-        });
-    });
-    body.row(30.0, |mut row| {
-        row.col(|ui| {
-            ui.label("(CITI: 1, BARX: 1, BARX: 5)");
-        });
-        row.col(|ui| {
-            ui.label("7");
-        });
-        row.col(|ui| {
-            ui.label(RichText::new("1.5571").color(Color32::GREEN));
-        });
-    });
+    }
 }
 
-fn render_sell_table_body(mut body: TableBody<'_>) {
-    body.row(30.0, |mut row| {
-        row.col(|ui| {
-            ui.label(RichText::new("1.5583").color(Color32::GREEN));
+fn render_sell_table_body(mut body: TableBody<'_>, sell_book: &Vec<FxAggBookEntry>) {
+    for entry in sell_book {
+        let lp_vol_vec = &entry.lp_vol;
+        let len = lp_vol_vec.len() - 1;
+        let mut lp_vol = String::from("(");
+        body.row(30.0, |mut row| {
+            row.col(|ui| {
+                ui.label(RichText::new(format!("{:?}", entry.price)).color(Color32::GREEN));
+            });
+
+            row.col(|ui| {
+                ui.label(format!("{:?}", entry.volume));
+            });
+
+            row.col(|ui| {
+                // ui.label(format!("{:?}", entry.lp_vol));
+
+                let mut index = 0;
+                for val in lp_vol_vec {
+                    if index == 0 && len == 0 {
+                        lp_vol = format!("{}{}: {})", lp_vol, val.0, val.1);
+                        //  ui.label(lp_vol);
+                    } else if index == 0 {
+                        lp_vol = format!("{}{}: {},", lp_vol, val.0, val.1);
+                        //  ui.label(lp_vol);
+                    } else if index == len {
+                        lp_vol = format!("{} {}: {})", lp_vol, val.0, val.1);
+                        //  ui.label(lp_vol);
+                    } else {
+                        lp_vol = format!("{} {}: {},", lp_vol, val.0, val.1);
+                        //  ui.label(lp_vol);
+                    }
+                    index += 1;
+                }
+                ui.label(lp_vol);
+            });
         });
-        row.col(|ui| {
-            ui.label("5");
-        });
-        row.col(|ui| {
-            ui.label("(MS : 5)");
-        });
-    });
-    body.row(30.0, |mut row| {
-        row.col(|ui| {
-            ui.label(RichText::new("1.5584").color(Color32::GREEN));
-        });
-        row.col(|ui| {
-            ui.label("8");
-        });
-        row.col(|ui| {
-            ui.label("(CITI: 1, BARX: 2, BARX: 5)");
-        });
-    });
+    }
 }
 
 fn fx_book_values() -> FxBook {
@@ -189,7 +218,7 @@ fn fx_book_values() -> FxBook {
                     (String::from("BARX "), 3),
                 ],
                 volume: 12,
-                price: 1.5559,
+                price: 1.5574,
                 side: String::from("Buy"),
             },
             FxAggBookEntry {
@@ -199,14 +228,14 @@ fn fx_book_values() -> FxBook {
                     (String::from("CITI "), 5),
                 ],
                 volume: 9,
-                price: 1.5556,
+                price: 1.5573,
                 side: String::from("Buy"),
             },
         ],
         sell_book: vec![FxAggBookEntry {
             lp_vol: vec![(String::from("MS "), 3), (String::from("JPMC "), 5)],
             volume: 8,
-            price: 1.5558,
+            price: 1.5581,
             side: String::from("Sell"),
         }],
         timestamp: 1753430617683973406,
