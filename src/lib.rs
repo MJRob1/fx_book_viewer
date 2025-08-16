@@ -1,6 +1,10 @@
 use eframe::egui;
-use egui::{Color32, Label, Layout, RichText};
+use egui::{Color32, Context, Label, Layout, RichText};
 use egui_extras::{TableBody, TableBuilder, TableRow};
+use std::process::exit;
+use std::sync::mpsc;
+use std::thread;
+use std::time::Duration;
 
 #[derive(Debug)]
 pub struct FxAggBookEntry {
@@ -22,11 +26,45 @@ pub struct FxBook {
 pub struct FxViewerApp {}
 
 impl FxViewerApp {
-    pub fn new(cc: &eframe::CreationContext<'_>) -> Self {
+    pub fn init(cc: &eframe::CreationContext<'_>) -> Self {
         // Customize egui here with cc.egui_ctx.set_fonts and cc.egui_ctx.set_visuals.
         // Restore app state using cc.storage (requires the "persistence" feature).
         // Use the cc.gl (a glow::Context) to create graphics shaders and buffers that you can use
         // for e.g. egui::PaintCallback.
+        let ctx = cc.egui_ctx.clone();
+        let (ctx_tx, ctx_rx) = mpsc::channel();
+        thread::spawn(move || {
+            let rec_ctx: Context = ctx_rx.recv().unwrap();
+            println!("Got context - now in control thread");
+
+            let (fx_tx, fx_rx) = mpsc::channel();
+
+            thread::spawn(move || {
+                println!("now in fx thread");
+                loop {
+                    let val = String::from("hi - need to change to fx values");
+                    thread::sleep(Duration::from_secs(1));
+                    if let Err(e) = fx_tx.send(val) {
+                        eprintln!("error sending from fx channel - {e}");
+                        exit(1);
+                    }
+                }
+            });
+
+            // let received = fx_rx.recv().unwrap();
+            for received in fx_rx {
+                println!("Got: {received}");
+                println!("Repainting display");
+                rec_ctx.request_repaint();
+                println!("Done display repaint");
+            }
+        });
+
+        if let Err(e) = ctx_tx.send(ctx) {
+            eprintln!("error sending from ctx channel - {e}");
+            exit(1);
+        }
+        // ctx_tx.send(ctx).unwrap();
         Self::default()
     }
 }
