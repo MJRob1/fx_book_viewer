@@ -2,9 +2,10 @@ use eframe::egui;
 use egui::{Color32, Context, Label, Layout, RichText};
 use egui_extras::{TableBody, TableBuilder, TableRow};
 use std::process::exit;
-use std::sync::mpsc;
+use std::sync::mpsc::Receiver;
+use std::sync::{Arc, Mutex, mpsc};
 use std::thread;
-use std::time::Duration;
+use std::time::{Duration, SystemTime, UNIX_EPOCH};
 
 #[derive(Debug)]
 pub struct FxAggBookEntry {
@@ -13,8 +14,23 @@ pub struct FxAggBookEntry {
     pub price: f64,
     pub side: String,
 }
+impl Clone for FxAggBookEntry {
+    fn clone(&self) -> Self {
+        let mut lp_vol: Vec<(String, i32)> = Vec::new();
 
-#[derive(Debug)]
+        for val in self.lp_vol.iter() {
+            lp_vol.push(val.clone());
+        }
+        Self {
+            lp_vol,
+            volume: self.volume.clone(),
+            price: self.price.clone(),
+            side: self.side.clone(),
+        }
+    }
+}
+
+#[derive(Debug, Default)]
 pub struct FxBook {
     pub currency_pair: String,
     pub buy_book: Vec<FxAggBookEntry>,
@@ -22,58 +38,121 @@ pub struct FxBook {
     pub timestamp: u64,
 }
 
-#[derive(Default)]
-pub struct FxViewerApp {}
+impl FxBook {
+    pub fn new() -> Self {
+        let currency_pair = String::from("USD/EUR");
+        let buy_book: Vec<FxAggBookEntry> = Vec::new();
+        let sell_book: Vec<FxAggBookEntry> = Vec::new();
+        //need to catch this possible panic on unwrap when converting u126 to u64
+        let timestamp: u64 = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .unwrap()
+            .as_nanos()
+            .try_into()
+            .unwrap();
+
+        FxBook {
+            currency_pair,
+            buy_book,
+            sell_book,
+            timestamp,
+        }
+    }
+    pub fn copy(&mut self) -> Self {
+        // create a copy of the FxBook
+        let mut buy_book: Vec<FxAggBookEntry> = Vec::new();
+        for val in self.buy_book.iter() {
+            buy_book.push(val.clone());
+        }
+
+        let mut sell_book: Vec<FxAggBookEntry> = Vec::new();
+        for val in self.sell_book.iter() {
+            sell_book.push(val.clone());
+        }
+        FxBook {
+            currency_pair: self.currency_pair.clone(),
+            buy_book,
+            sell_book,
+            timestamp: self.timestamp,
+        }
+    }
+}
+
+pub fn fx_book_copy(fx_book: &FxBook) -> FxBook {
+    // create a copy of the FxBook
+    let mut buy_book: Vec<FxAggBookEntry> = Vec::new();
+    for val in fx_book.buy_book.iter() {
+        buy_book.push(val.clone());
+    }
+
+    let mut sell_book: Vec<FxAggBookEntry> = Vec::new();
+    for val in fx_book.sell_book.iter() {
+        sell_book.push(val.clone());
+    }
+    FxBook {
+        currency_pair: fx_book.currency_pair.clone(),
+        buy_book,
+        sell_book,
+        timestamp: fx_book.timestamp,
+    }
+}
+#[derive(Default, Debug)]
+pub struct FxViewerApp {
+    // pub fx_book_ref: Arc<Mutex<FxBook>>,
+    pub fx_book: FxBook,
+}
 
 impl FxViewerApp {
-    pub fn init(cc: &eframe::CreationContext<'_>) -> Self {
+    pub fn init(&mut self, cc: &eframe::CreationContext<'_>) -> Self {
         // Customize egui here with cc.egui_ctx.set_fonts and cc.egui_ctx.set_visuals.
         // Restore app state using cc.storage (requires the "persistence" feature).
         // Use the cc.gl (a glow::Context) to create graphics shaders and buffers that you can use
         // for e.g. egui::PaintCallback.
         let ctx = cc.egui_ctx.clone();
         let (ctx_tx, ctx_rx) = mpsc::channel();
+        let (fx_tx, fx_rx) = mpsc::channel();
         thread::spawn(move || {
+            // start fx thread
             let rec_ctx: Context = ctx_rx.recv().unwrap();
-            println!("Got context - now in control thread");
 
-            let (fx_tx, fx_rx) = mpsc::channel();
+            //  loop {
+            let mut fx_book = fx_book_values(); // fx book will be main fx book
+            //   println!("fx_thread: fx_book: {:?}", fx_book);
+            let fx_book_copy = fx_book.copy(); // this is copy which is sent to ui
+            //  println!("fx_thread: fx_book_copy: {:?}", fx_book_copy);
 
-            thread::spawn(move || {
-                println!("now in fx thread");
-                loop {
-                    let val = String::from("hi - need to change to fx values");
-                    thread::sleep(Duration::from_secs(1));
-                    if let Err(e) = fx_tx.send(val) {
-                        eprintln!("error sending from fx channel - {e}");
-                        exit(1);
-                    }
-                }
-            });
-
-            // let received = fx_rx.recv().unwrap();
-            for received in fx_rx {
-                println!("Got: {received}");
-                println!("Repainting display");
-                rec_ctx.request_repaint();
-                println!("Done display repaint");
+            if let Err(e) = fx_tx.send(fx_book_copy) {
+                eprintln!("error sending from fx channel - {e}");
+                exit(1);
             }
-        });
+
+            //  println!("Repainting display");
+            rec_ctx.request_repaint();
+
+            // }
+        }); // end of fx thread  
 
         if let Err(e) = ctx_tx.send(ctx) {
             eprintln!("error sending from ctx channel - {e}");
             exit(1);
         }
-        // ctx_tx.send(ctx).unwrap();
-        Self::default()
+
+        let mut fx_book_update = fx_rx.recv().unwrap(); // catch panic?
+        // for received in fx_rx {
+        // }
+
+        Self {
+            fx_book: fx_book_update,
+        }
     }
 }
 
 impl eframe::App for FxViewerApp {
     fn update(&mut self, ctx: &egui::Context, frame: &mut eframe::Frame) {
-        let fx_book = fx_book_values();
+        let fx_book = fx_book_copy(&self.fx_book);
+        //  println!("update: fx_book: {:?}", fx_book);
         render_top_panel(self, ctx, frame);
-        render_fx_book(self, ctx, frame, &fx_book);
+        render_fx_book(self, ctx, frame, fx_book);
     }
 }
 
@@ -100,8 +179,9 @@ fn render_fx_book(
     fx_viewer_app: &mut FxViewerApp,
     ctx: &egui::Context,
     frame: &mut eframe::Frame,
-    fx_book: &FxBook,
+    fx_book: FxBook,
 ) {
+    // let fx_book = *fx_viewer_app.fx_book_ref.lock().unwrap(); // panic if lock error
     egui::CentralPanel::default().show(ctx, |ui| {
         //   ui.heading("USD/EUR");
         //   ui.label("1.5552");
@@ -245,7 +325,7 @@ fn render_sell_table_body(mut body: TableBody<'_>, sell_book: &Vec<FxAggBookEntr
 }
 
 fn fx_book_values() -> FxBook {
-    let mut fx_book = FxBook {
+    let fx_book = FxBook {
         currency_pair: String::from(" USD/EUR"),
         buy_book: vec![
             FxAggBookEntry {
