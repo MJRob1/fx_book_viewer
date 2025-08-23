@@ -1,0 +1,774 @@
+2025-08-22 09:52:38 - DEBUG: Using the glow renderer
+2025-08-22 09:52:38 - DEBUG: Bound new global [11] wl_output v3
+2025-08-22 09:52:38 - DEBUG: Bound new global [21] wl_output v3
+2025-08-22 09:52:38 - DEBUG: Bound new global [22] wl_output v3
+2025-08-22 09:52:38 - DEBUG: Bound new global [4] zxdg_output_manager_v1 v2
+2025-08-22 09:52:38 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-22 09:52:38 - DEBUG: supported wl_shm format Argb8888
+2025-08-22 09:52:38 - DEBUG: supported wl_shm format Xrgb8888
+2025-08-22 09:52:38 - DEBUG: supported wl_shm format Rgb565
+2025-08-22 09:52:38 - DEBUG: Event::Resumed
+2025-08-22 09:52:38 - DEBUG: trying to create glutin Display with config: ConfigTemplateBuilder { template: ConfigTemplate { color_buffer_type: Rgb { r_size: 8, g_size: 8, b_size: 8 }, alpha_size: 8, depth_size: 0, stencil_size: 0, num_samples: None, min_swap_interval: None, max_swap_interval: None, config_surface_types: ConfigSurfaceTypes(WINDOW), api: None, transparency: false, single_buffering: false, stereoscopy: None, float_pixels: false, max_pbuffer_width: None, hardware_accelerated: None, max_pbuffer_height: None, native_window: None } }
+2025-08-22 09:52:38 - DEBUG: using the first config from config picker closure. config: Egl(Config { inner: Config { raw: EglConfig(0x581077dab2b0), display: Khr(0x581077d95840) } })
+2025-08-22 09:52:38 - ERROR: XDG Settings Portal did not return response in time: timeout: 100ms, key: color-scheme
+2025-08-22 09:52:38 - DEBUG: Failed to set window size
+2025-08-22 09:52:38 - DEBUG: successfully created GL Display with version: EGL 1.5 and supported features: DisplayFeatures(CONTEXT_ROBUSTNESS | CONTEXT_NO_ERROR | FLOAT_PIXEL_FORMAT | SWAP_CONTROL | CREATE_ES_CONTEXT | MULTISAMPLING_PIXEL_FORMATS | SRGB_FRAMEBUFFERS)
+2025-08-22 09:52:38 - DEBUG: creating gl context using raw window handle: Some(Wayland(WaylandWindowHandle { surface: 0x581077dade30 }))
+2025-08-22 09:52:39 - DEBUG: Initializing egui_winit for viewport "FFFF"
+2025-08-22 09:52:39 - DEBUG: Creating a gl_surface for viewport "FFFF"
+2025-08-22 09:52:39 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-22 09:52:39 - DEBUG: 
+opengl version: 4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1
+opengl renderer: llvmpipe (LLVM 19.1.1, 256 bits)
+opengl vendor: Mesa
+2025-08-22 09:52:39 - DEBUG: Shader version: Gl140 ("4.50").
+2025-08-22 09:52:39 - DEBUG: Shader header: "#version 140\n".
+2025-08-22 09:52:39 - DEBUG: SRGB framebuffer Support: true
+2025-08-22 09:52:39 - DEBUG: GL version: "4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1".
+2025-08-22 09:52:41 - INFO: removing top of buy book to maintain spread
+2025-08-22 09:52:42 - INFO: removing top of sell book to maintain spread
+2025-08-22 09:52:42 - DEBUG: Received Event::LoopExiting - saving app state…
+2025-08-22 09:52:43 - ERROR: Worker thread errored with: Unknown error while interacting with the clipboard: Connection reset by peer (os error 104)
+2025-08-22 09:52:43 - ERROR: Could not hand the clipboard data over to the clipboard manager: Unknown error while interacting with the clipboard: The X11 server closed the connection
+2025-08-22 09:52:43 - ERROR: Failed to flush the clipboard window. Error: Broken pipe (os error 32)
+2025-08-22 09:52:43 - ERROR: error starting eframe - winit EventLoopError: Exit Failure: 1
+2025-08-22 09:53:13 - DEBUG: Using the glow renderer
+2025-08-22 09:53:13 - DEBUG: Bound new global [11] wl_output v3
+2025-08-22 09:53:13 - DEBUG: Bound new global [21] wl_output v3
+2025-08-22 09:53:13 - DEBUG: Bound new global [22] wl_output v3
+2025-08-22 09:53:13 - DEBUG: Bound new global [4] zxdg_output_manager_v1 v2
+2025-08-22 09:53:13 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-22 09:53:13 - DEBUG: supported wl_shm format Argb8888
+2025-08-22 09:53:13 - DEBUG: supported wl_shm format Xrgb8888
+2025-08-22 09:53:13 - DEBUG: supported wl_shm format Rgb565
+2025-08-22 09:53:13 - DEBUG: Event::Resumed
+2025-08-22 09:53:13 - DEBUG: trying to create glutin Display with config: ConfigTemplateBuilder { template: ConfigTemplate { color_buffer_type: Rgb { r_size: 8, g_size: 8, b_size: 8 }, alpha_size: 8, depth_size: 0, stencil_size: 0, num_samples: None, min_swap_interval: None, max_swap_interval: None, config_surface_types: ConfigSurfaceTypes(WINDOW), api: None, transparency: false, single_buffering: false, stereoscopy: None, float_pixels: false, max_pbuffer_width: None, hardware_accelerated: None, max_pbuffer_height: None, native_window: None } }
+2025-08-22 09:53:13 - DEBUG: using the first config from config picker closure. config: Egl(Config { inner: Config { raw: EglConfig(0x601307483910), display: Khr(0x60130746d840) } })
+2025-08-22 09:53:13 - ERROR: XDG Settings Portal did not return response in time: timeout: 100ms, key: color-scheme
+2025-08-22 09:53:13 - DEBUG: Failed to set window size
+2025-08-22 09:53:13 - DEBUG: successfully created GL Display with version: EGL 1.5 and supported features: DisplayFeatures(CONTEXT_ROBUSTNESS | CONTEXT_NO_ERROR | FLOAT_PIXEL_FORMAT | SWAP_CONTROL | CREATE_ES_CONTEXT | MULTISAMPLING_PIXEL_FORMATS | SRGB_FRAMEBUFFERS)
+2025-08-22 09:53:13 - DEBUG: creating gl context using raw window handle: Some(Wayland(WaylandWindowHandle { surface: 0x601307486500 }))
+2025-08-22 09:53:13 - DEBUG: Initializing egui_winit for viewport "FFFF"
+2025-08-22 09:53:14 - DEBUG: Creating a gl_surface for viewport "FFFF"
+2025-08-22 09:53:14 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-22 09:53:14 - DEBUG: 
+opengl version: 4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1
+opengl renderer: llvmpipe (LLVM 19.1.1, 256 bits)
+opengl vendor: Mesa
+2025-08-22 09:53:14 - DEBUG: Shader version: Gl140 ("4.50").
+2025-08-22 09:53:14 - DEBUG: Shader header: "#version 140\n".
+2025-08-22 09:53:14 - DEBUG: SRGB framebuffer Support: true
+2025-08-22 09:53:14 - DEBUG: GL version: "4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1".
+2025-08-22 09:53:15 - DEBUG: Received Event::LoopExiting - saving app state…
+2025-08-22 09:53:15 - ERROR: Worker thread errored with: Unknown error while interacting with the clipboard: Connection reset by peer (os error 104)
+2025-08-22 09:53:15 - ERROR: Could not hand the clipboard data over to the clipboard manager: Unknown error while interacting with the clipboard: The X11 server closed the connection
+2025-08-22 09:53:15 - ERROR: Failed to flush the clipboard window. Error: Broken pipe (os error 32)
+2025-08-22 09:53:15 - ERROR: error starting eframe - winit EventLoopError: Exit Failure: 1
+2025-08-22 18:44:09 - DEBUG: Using the glow renderer
+2025-08-22 18:44:09 - DEBUG: Bound new global [11] wl_output v3
+2025-08-22 18:44:09 - DEBUG: Bound new global [21] wl_output v3
+2025-08-22 18:44:09 - DEBUG: Bound new global [22] wl_output v3
+2025-08-22 18:44:09 - DEBUG: Bound new global [4] zxdg_output_manager_v1 v2
+2025-08-22 18:44:09 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-22 18:44:09 - DEBUG: supported wl_shm format Argb8888
+2025-08-22 18:44:09 - DEBUG: supported wl_shm format Xrgb8888
+2025-08-22 18:44:09 - DEBUG: supported wl_shm format Rgb565
+2025-08-22 18:44:09 - DEBUG: Event::Resumed
+2025-08-22 18:44:09 - DEBUG: trying to create glutin Display with config: ConfigTemplateBuilder { template: ConfigTemplate { color_buffer_type: Rgb { r_size: 8, g_size: 8, b_size: 8 }, alpha_size: 8, depth_size: 0, stencil_size: 0, num_samples: None, min_swap_interval: None, max_swap_interval: None, config_surface_types: ConfigSurfaceTypes(WINDOW), api: None, transparency: false, single_buffering: false, stereoscopy: None, float_pixels: false, max_pbuffer_width: None, hardware_accelerated: None, max_pbuffer_height: None, native_window: None } }
+2025-08-22 18:44:09 - DEBUG: using the first config from config picker closure. config: Egl(Config { inner: Config { raw: EglConfig(0x6099a2176220), display: Khr(0x6099a2160840) } })
+2025-08-22 18:44:09 - ERROR: XDG Settings Portal did not return response in time: timeout: 100ms, key: color-scheme
+2025-08-22 18:44:09 - DEBUG: Failed to set window size
+2025-08-22 18:44:09 - DEBUG: successfully created GL Display with version: EGL 1.5 and supported features: DisplayFeatures(CONTEXT_ROBUSTNESS | CONTEXT_NO_ERROR | FLOAT_PIXEL_FORMAT | SWAP_CONTROL | CREATE_ES_CONTEXT | MULTISAMPLING_PIXEL_FORMATS | SRGB_FRAMEBUFFERS)
+2025-08-22 18:44:09 - DEBUG: creating gl context using raw window handle: Some(Wayland(WaylandWindowHandle { surface: 0x6099a2178da0 }))
+2025-08-22 18:44:09 - DEBUG: Initializing egui_winit for viewport "FFFF"
+2025-08-22 18:44:09 - DEBUG: Creating a gl_surface for viewport "FFFF"
+2025-08-22 18:44:09 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-22 18:44:09 - DEBUG: 
+opengl version: 4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1
+opengl renderer: llvmpipe (LLVM 19.1.1, 256 bits)
+opengl vendor: Mesa
+2025-08-22 18:44:09 - DEBUG: Shader version: Gl140 ("4.50").
+2025-08-22 18:44:09 - DEBUG: Shader header: "#version 140\n".
+2025-08-22 18:44:09 - DEBUG: SRGB framebuffer Support: true
+2025-08-22 18:44:09 - DEBUG: GL version: "4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1".
+2025-08-22 18:44:13 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:13 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:13 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:14 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:14 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:14 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:14 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:17 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:18 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:18 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:18 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:20 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:20 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:20 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:20 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:20 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:20 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:21 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:23 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:23 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:23 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:23 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:25 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:25 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:25 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:25 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:25 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:25 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:26 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:26 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:27 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:27 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:28 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:28 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:28 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:28 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:28 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:28 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:28 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:29 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:29 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:29 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:29 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:29 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:29 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:30 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:30 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:30 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:31 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:31 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:31 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:31 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:31 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:31 - INFO: books crossed at index 0
+2025-08-22 18:44:31 - INFO: removing entry 0 from sell book
+2025-08-22 18:44:31 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:31 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:31 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:31 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:32 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:32 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:32 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:34 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:34 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:34 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:34 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:34 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:34 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:35 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:35 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:35 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:36 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:36 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:36 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:37 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:38 - INFO: books crossed at index 0
+2025-08-22 18:44:38 - INFO: removing entry 0 from sell book
+2025-08-22 18:44:38 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:38 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:38 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:38 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:38 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:38 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:38 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:39 - INFO: books crossed at index 0
+2025-08-22 18:44:39 - INFO: removing entry 0 from sell book
+2025-08-22 18:44:39 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:39 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:40 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:41 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:41 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:41 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:42 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:42 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:42 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:42 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:42 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:43 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:43 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:43 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:44 - INFO: books crossed at index 2
+2025-08-22 18:44:44 - INFO: removing entry 0 from sell book
+2025-08-22 18:44:44 - INFO: removing entry 1 from sell book
+2025-08-22 18:44:44 - INFO: removing entry 2 from sell book
+2025-08-22 18:44:45 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:45 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:45 - INFO: books crossed at index 1
+2025-08-22 18:44:45 - INFO: removing entry 0 from sell book
+2025-08-22 18:44:45 - INFO: removing entry 1 from sell book
+2025-08-22 18:44:45 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:45 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:46 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:46 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:47 - INFO: books crossed at index 1
+2025-08-22 18:44:47 - INFO: removing entry 0 from sell book
+2025-08-22 18:44:47 - INFO: removing entry 1 from sell book
+2025-08-22 18:44:47 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:47 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:47 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:48 - INFO: books crossed at index 1
+2025-08-22 18:44:48 - INFO: removing entry 0 from sell book
+2025-08-22 18:44:48 - INFO: removing entry 1 from sell book
+2025-08-22 18:44:48 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:48 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:48 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:50 - INFO: books crossed at index 0
+2025-08-22 18:44:50 - INFO: removing entry 0 from sell book
+2025-08-22 18:44:50 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:50 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:53 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:53 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:53 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:53 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:54 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:54 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:54 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:54 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:54 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:54 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:54 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:55 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:55 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:55 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:55 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:55 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:55 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:55 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:57 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:57 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:57 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:58 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:58 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:44:59 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:59 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:44:59 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:00 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:00 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:00 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:00 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:01 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:01 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:02 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:02 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:02 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:03 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:03 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:03 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:03 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:04 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:04 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:04 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:04 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:07 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:08 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:37 - DEBUG: Received WindowEvent::CloseRequested for viewport Some("FFFF")
+2025-08-22 18:45:37 - DEBUG: Closing root viewport (ViewportCommand::CancelClose was not sent)
+2025-08-22 18:45:37 - DEBUG: Asking to exit event loop…
+2025-08-22 18:45:37 - DEBUG: Received Event::LoopExiting - saving app state…
+2025-08-22 18:45:37 - DEBUG: eframe window closed
+2025-08-22 18:45:51 - DEBUG: Using the glow renderer
+2025-08-22 18:45:51 - DEBUG: Bound new global [11] wl_output v3
+2025-08-22 18:45:51 - DEBUG: Bound new global [21] wl_output v3
+2025-08-22 18:45:51 - DEBUG: Bound new global [22] wl_output v3
+2025-08-22 18:45:51 - DEBUG: Bound new global [4] zxdg_output_manager_v1 v2
+2025-08-22 18:45:51 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-22 18:45:51 - DEBUG: supported wl_shm format Argb8888
+2025-08-22 18:45:51 - DEBUG: supported wl_shm format Xrgb8888
+2025-08-22 18:45:51 - DEBUG: supported wl_shm format Rgb565
+2025-08-22 18:45:51 - DEBUG: Event::Resumed
+2025-08-22 18:45:51 - DEBUG: trying to create glutin Display with config: ConfigTemplateBuilder { template: ConfigTemplate { color_buffer_type: Rgb { r_size: 8, g_size: 8, b_size: 8 }, alpha_size: 8, depth_size: 0, stencil_size: 0, num_samples: None, min_swap_interval: None, max_swap_interval: None, config_surface_types: ConfigSurfaceTypes(WINDOW), api: None, transparency: false, single_buffering: false, stereoscopy: None, float_pixels: false, max_pbuffer_width: None, hardware_accelerated: None, max_pbuffer_height: None, native_window: None } }
+2025-08-22 18:45:51 - DEBUG: using the first config from config picker closure. config: Egl(Config { inner: Config { raw: EglConfig(0x58b6e0466f80), display: Khr(0x58b6e0451330) } })
+2025-08-22 18:45:51 - ERROR: XDG Settings Portal did not return response in time: timeout: 100ms, key: color-scheme
+2025-08-22 18:45:51 - DEBUG: Failed to set window size
+2025-08-22 18:45:51 - DEBUG: successfully created GL Display with version: EGL 1.5 and supported features: DisplayFeatures(CONTEXT_ROBUSTNESS | CONTEXT_NO_ERROR | FLOAT_PIXEL_FORMAT | SWAP_CONTROL | CREATE_ES_CONTEXT | MULTISAMPLING_PIXEL_FORMATS | SRGB_FRAMEBUFFERS)
+2025-08-22 18:45:51 - DEBUG: creating gl context using raw window handle: Some(Wayland(WaylandWindowHandle { surface: 0x58b6e0469b70 }))
+2025-08-22 18:45:51 - DEBUG: Initializing egui_winit for viewport "FFFF"
+2025-08-22 18:45:51 - DEBUG: Creating a gl_surface for viewport "FFFF"
+2025-08-22 18:45:51 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-22 18:45:51 - DEBUG: 
+opengl version: 4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1
+opengl renderer: llvmpipe (LLVM 19.1.1, 256 bits)
+opengl vendor: Mesa
+2025-08-22 18:45:51 - DEBUG: Shader version: Gl140 ("4.50").
+2025-08-22 18:45:51 - DEBUG: Shader header: "#version 140\n".
+2025-08-22 18:45:51 - DEBUG: SRGB framebuffer Support: true
+2025-08-22 18:45:51 - DEBUG: GL version: "4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1".
+2025-08-22 18:45:52 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:52 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:53 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:53 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:54 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:54 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:54 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:56 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:59 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:59 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:59 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:45:59 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:45:59 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:00 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:00 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:00 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:01 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:01 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:01 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:01 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:02 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:03 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:03 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:03 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:03 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:05 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:05 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:05 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:05 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:05 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:06 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:06 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:06 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:07 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:07 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:07 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:08 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:08 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:08 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:08 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:08 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:08 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:09 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:10 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:10 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:10 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:10 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:11 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:12 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:12 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:13 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:13 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:13 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:13 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:13 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:14 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:15 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:15 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:15 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:16 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:16 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:16 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:16 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:17 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:17 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:19 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:20 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:20 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:20 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:20 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:20 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:20 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:22 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:22 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:23 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:23 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:23 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:24 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:24 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:24 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:23 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:24 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:25 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:25 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:25 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:26 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:26 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:26 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:27 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:27 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:27 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:28 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:28 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:28 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:29 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:29 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:29 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:29 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:29 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:29 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:29 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:31 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:31 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:31 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:31 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:31 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:31 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:32 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:32 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:32 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:32 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:32 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:32 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:32 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:33 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:33 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:33 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:33 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:34 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:34 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:34 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:34 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:34 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:36 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:36 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:36 - INFO: books crossed at index 0
+2025-08-22 18:46:36 - INFO: removing entry 0 from sell book
+2025-08-22 18:46:36 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:36 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:38 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:38 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:38 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:38 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:40 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:40 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:41 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:41 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:41 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:41 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:43 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:43 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:43 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:44 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:44 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:44 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:45 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:45 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:45 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:45 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:50 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:50 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:51 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:51 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:55 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:46:55 - INFO: removing top of sell book to maintain spread
+2025-08-22 18:46:55 - INFO: removing top of buy book to maintain spread
+2025-08-22 18:47:57 - DEBUG: Received WindowEvent::CloseRequested for viewport Some("FFFF")
+2025-08-22 18:47:57 - DEBUG: Closing root viewport (ViewportCommand::CancelClose was not sent)
+2025-08-22 18:47:57 - DEBUG: Asking to exit event loop…
+2025-08-22 18:47:57 - DEBUG: Received Event::LoopExiting - saving app state…
+2025-08-22 18:47:57 - DEBUG: eframe window closed
+2025-08-23 09:12:22 - DEBUG: Using the glow renderer
+2025-08-23 09:12:22 - DEBUG: Bound new global [11] wl_output v3
+2025-08-23 09:12:22 - DEBUG: Bound new global [21] wl_output v3
+2025-08-23 09:12:22 - DEBUG: Bound new global [22] wl_output v3
+2025-08-23 09:12:22 - DEBUG: Bound new global [4] zxdg_output_manager_v1 v2
+2025-08-23 09:12:22 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-23 09:12:22 - DEBUG: supported wl_shm format Argb8888
+2025-08-23 09:12:22 - DEBUG: supported wl_shm format Xrgb8888
+2025-08-23 09:12:22 - DEBUG: supported wl_shm format Rgb565
+2025-08-23 09:12:22 - DEBUG: Event::Resumed
+2025-08-23 09:12:22 - DEBUG: trying to create glutin Display with config: ConfigTemplateBuilder { template: ConfigTemplate { color_buffer_type: Rgb { r_size: 8, g_size: 8, b_size: 8 }, alpha_size: 8, depth_size: 0, stencil_size: 0, num_samples: None, min_swap_interval: None, max_swap_interval: None, config_surface_types: ConfigSurfaceTypes(WINDOW), api: None, transparency: false, single_buffering: false, stereoscopy: None, float_pixels: false, max_pbuffer_width: None, hardware_accelerated: None, max_pbuffer_height: None, native_window: None } }
+2025-08-23 09:12:22 - DEBUG: using the first config from config picker closure. config: Egl(Config { inner: Config { raw: EglConfig(0x620f75a3e1e0), display: Khr(0x620f75a286e0) } })
+2025-08-23 09:12:22 - ERROR: XDG Settings Portal did not return response in time: timeout: 100ms, key: color-scheme
+2025-08-23 09:12:22 - DEBUG: Failed to set window size
+2025-08-23 09:12:22 - DEBUG: successfully created GL Display with version: EGL 1.5 and supported features: DisplayFeatures(CONTEXT_ROBUSTNESS | CONTEXT_NO_ERROR | FLOAT_PIXEL_FORMAT | SWAP_CONTROL | CREATE_ES_CONTEXT | MULTISAMPLING_PIXEL_FORMATS | SRGB_FRAMEBUFFERS)
+2025-08-23 09:12:22 - DEBUG: creating gl context using raw window handle: Some(Wayland(WaylandWindowHandle { surface: 0x620f75a40cd0 }))
+2025-08-23 09:12:22 - DEBUG: Initializing egui_winit for viewport "FFFF"
+2025-08-23 09:12:22 - DEBUG: Creating a gl_surface for viewport "FFFF"
+2025-08-23 09:12:22 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-23 09:12:22 - DEBUG: 
+opengl version: 4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1
+opengl renderer: llvmpipe (LLVM 19.1.1, 256 bits)
+opengl vendor: Mesa
+2025-08-23 09:12:22 - DEBUG: Shader version: Gl140 ("4.50").
+2025-08-23 09:12:22 - DEBUG: Shader header: "#version 140\n".
+2025-08-23 09:12:22 - DEBUG: SRGB framebuffer Support: true
+2025-08-23 09:12:22 - DEBUG: GL version: "4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1".
+2025-08-23 09:12:25 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:25 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:26 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:26 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:26 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:26 - DEBUG: Received Event::LoopExiting - saving app state…
+2025-08-23 09:12:26 - ERROR: Worker thread errored with: Unknown error while interacting with the clipboard: Connection reset by peer (os error 104)
+2025-08-23 09:12:26 - ERROR: Could not hand the clipboard data over to the clipboard manager: Unknown error while interacting with the clipboard: The X11 server closed the connection
+2025-08-23 09:12:26 - ERROR: Failed to flush the clipboard window. Error: Broken pipe (os error 32)
+2025-08-23 09:12:26 - ERROR: error starting eframe - winit EventLoopError: Exit Failure: 1
+2025-08-23 09:12:40 - DEBUG: Using the glow renderer
+2025-08-23 09:12:40 - DEBUG: Bound new global [11] wl_output v3
+2025-08-23 09:12:40 - DEBUG: Bound new global [21] wl_output v3
+2025-08-23 09:12:40 - DEBUG: Bound new global [22] wl_output v3
+2025-08-23 09:12:40 - DEBUG: Bound new global [4] zxdg_output_manager_v1 v2
+2025-08-23 09:12:40 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-23 09:12:40 - DEBUG: supported wl_shm format Argb8888
+2025-08-23 09:12:40 - DEBUG: supported wl_shm format Xrgb8888
+2025-08-23 09:12:40 - DEBUG: supported wl_shm format Rgb565
+2025-08-23 09:12:40 - DEBUG: Event::Resumed
+2025-08-23 09:12:40 - DEBUG: trying to create glutin Display with config: ConfigTemplateBuilder { template: ConfigTemplate { color_buffer_type: Rgb { r_size: 8, g_size: 8, b_size: 8 }, alpha_size: 8, depth_size: 0, stencil_size: 0, num_samples: None, min_swap_interval: None, max_swap_interval: None, config_surface_types: ConfigSurfaceTypes(WINDOW), api: None, transparency: false, single_buffering: false, stereoscopy: None, float_pixels: false, max_pbuffer_width: None, hardware_accelerated: None, max_pbuffer_height: None, native_window: None } }
+2025-08-23 09:12:40 - DEBUG: using the first config from config picker closure. config: Egl(Config { inner: Config { raw: EglConfig(0x5a0213237eb0), display: Khr(0x5a0213222330) } })
+2025-08-23 09:12:40 - ERROR: XDG Settings Portal did not return response in time: timeout: 100ms, key: color-scheme
+2025-08-23 09:12:40 - DEBUG: Failed to set window size
+2025-08-23 09:12:40 - DEBUG: successfully created GL Display with version: EGL 1.5 and supported features: DisplayFeatures(CONTEXT_ROBUSTNESS | CONTEXT_NO_ERROR | FLOAT_PIXEL_FORMAT | SWAP_CONTROL | CREATE_ES_CONTEXT | MULTISAMPLING_PIXEL_FORMATS | SRGB_FRAMEBUFFERS)
+2025-08-23 09:12:40 - DEBUG: creating gl context using raw window handle: Some(Wayland(WaylandWindowHandle { surface: 0x5a021323aaa0 }))
+2025-08-23 09:12:40 - DEBUG: Initializing egui_winit for viewport "FFFF"
+2025-08-23 09:12:40 - DEBUG: Creating a gl_surface for viewport "FFFF"
+2025-08-23 09:12:40 - DEBUG: Bound new global [19] wl_seat v7
+2025-08-23 09:12:40 - DEBUG: 
+opengl version: 4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1
+opengl renderer: llvmpipe (LLVM 19.1.1, 256 bits)
+opengl vendor: Mesa
+2025-08-23 09:12:40 - DEBUG: Shader version: Gl140 ("4.50").
+2025-08-23 09:12:40 - DEBUG: Shader header: "#version 140\n".
+2025-08-23 09:12:40 - DEBUG: SRGB framebuffer Support: true
+2025-08-23 09:12:40 - DEBUG: GL version: "4.5 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.1".
+2025-08-23 09:12:42 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:42 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:43 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:43 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:44 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:44 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:44 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:44 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:45 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:45 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:46 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:46 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:46 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:46 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:47 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:47 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:47 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:48 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:48 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:48 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:49 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:50 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:51 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:51 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:51 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:51 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:51 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:51 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:51 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:51 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:52 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:52 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:54 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:54 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:54 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:55 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:55 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:55 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:55 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:55 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:55 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:56 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:57 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:57 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:57 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:12:59 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:00 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:01 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:01 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:02 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:02 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:02 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:03 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:03 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:03 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:03 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:03 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:04 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:04 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:04 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:04 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:04 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:04 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:05 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:06 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:07 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:07 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:07 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:07 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:07 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:07 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:07 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:08 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:08 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:08 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:08 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:09 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:09 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:10 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:10 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:10 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:10 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:10 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:10 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:10 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:12 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:12 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:12 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:12 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:12 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:13 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:13 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:13 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:13 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:14 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:14 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:15 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:15 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:15 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:17 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:17 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:17 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:18 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:19 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:19 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:20 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:21 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:21 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:21 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:21 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:21 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:21 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:21 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:24 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:24 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:24 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:24 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:24 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:24 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:24 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:25 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:25 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:25 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:25 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:28 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:28 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:28 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:29 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:29 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:29 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:29 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:29 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:29 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:29 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:31 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:32 - INFO: books crossed at index 0
+2025-08-23 09:13:32 - INFO: removing entry 0 from sell book
+2025-08-23 09:13:32 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:32 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:32 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:32 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:33 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:33 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:33 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:33 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:33 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:33 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:35 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:35 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:35 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:37 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:37 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:37 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:37 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:39 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:39 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:39 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:39 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:39 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:39 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:41 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:41 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:42 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:42 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:43 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:43 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:43 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:43 - INFO: removing top of buy book to maintain spread
+2025-08-23 09:13:44 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:45 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:45 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:46 - INFO: removing top of sell book to maintain spread
+2025-08-23 09:13:46 - INFO: removing top of sell book to maintain spread
